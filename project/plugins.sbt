@@ -7,3 +7,5 @@ resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/release
 addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.6")
 
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.10")
+
+addSbtPlugin("org.xerial.sbt" % "sbt-sonatype" % "2.0")
