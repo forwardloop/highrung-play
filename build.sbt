@@ -13,11 +13,13 @@ homepage := Some(url("https://github.com/forwardloop/highrung-play"))
 scmInfo := Some(ScmInfo(url("https://github.com/forwardloop/highrung-play"),
                             "git@github.com:forwardloop/highrung-play.git"))
 developers := List(Developer("forwardloop",
-                             "Kris L",
+                             "Kris",
                              "support@squashpoints.com",
                              url("https://github.com/forwardloop")))
 licenses += ("GPLv3", url("https://www.gnu.org/licenses/gpl-3.0.en.html"))
 publishMavenStyle := true
+sonatypeProfileName := "com.highrung"
+organization := "com.highrung"
 
 // Add sonatype repository settings
 publishTo := Some(
