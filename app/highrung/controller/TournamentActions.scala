@@ -1,8 +1,9 @@
-package highrung
+package highrung.controller
 
-import play.api.mvc._
-import scala.concurrent.Future
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
+import play.api.mvc._
+
+import scala.concurrent.Future
 
 trait TournamentActions[P, T] extends Controller {
 

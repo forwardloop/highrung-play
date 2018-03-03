@@ -1,12 +1,16 @@
 name := "highrung-play"
 
-version := "0.9.0"
+version := "0.9.1"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.12"
 
 lazy val highrungPlay = (project in file(".")).enablePlugins(PlayScala)
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.4" % "test"
+libraryDependencies ++= Seq(
+  "com.github.forwardloop" %% "highrung-model" % "0.9.3",
+  "com.github.forwardloop" %% "glicko2s" % "0.9.3",
+  "com.typesafe.play" %% "play-slick" % "2.1.0"
+)
 
 // POM settings for Sonatype
 homepage := Some(url("https://github.com/forwardloop/highrung-play"))
@@ -18,8 +22,8 @@ developers := List(Developer("forwardloop",
                              url("https://github.com/forwardloop")))
 licenses += ("GPLv3", url("https://www.gnu.org/licenses/gpl-3.0.en.html"))
 publishMavenStyle := true
-sonatypeProfileName := "com.highrung"
-organization := "com.highrung"
+sonatypeProfileName := "com.github.forwardloop"
+organization := "com.github.forwardloop"
 
 // Add sonatype repository settings
 publishTo := Some(
@@ -28,5 +32,3 @@ publishTo := Some(
   else
     Opts.resolver.sonatypeStaging
 )
-
-
