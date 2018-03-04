@@ -1,13 +1,13 @@
 name := "highrung-play"
 
-version := "0.9.1"
+version := "0.9.2-SNAPSHOT"
 
 scalaVersion := "2.11.12"
 
 lazy val highrungPlay = (project in file(".")).enablePlugins(PlayScala)
 
 libraryDependencies ++= Seq(
-  "com.github.forwardloop" %% "highrung-model" % "0.9.3",
+  "com.github.forwardloop" %% "highrung-model" % "0.9.4-SNAPSHOT",
   "com.github.forwardloop" %% "glicko2s" % "0.9.3",
   "com.typesafe.play" %% "play-slick" % "2.1.0"
 )
